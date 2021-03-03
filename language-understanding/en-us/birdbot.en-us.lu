@@ -1,0 +1,685 @@
+# gotoMenu
+- Take me to menu
+- Do menu
+- Get Menu
+- Do the menu
+- Take me to main menu
+- take me to the menu
+- main menu please
+- Go to menu
+- go to the menu
+- go to the main menu
+- menu
+- start again
+- go back to menu
+
+# gotoBirdLookup
+- Tell me about {BirdName}
+- Can you look up {BirdName}
+- Please get {BirdName}
+- It would be great if I could get {BirdName}
+- {BirdName}
+- Parrot
+- Sparrow
+- Lookup by Common Name 🔎
+- Lookup by name
+- Lookup Bird by Name
+
+@ list BirdName =
+- Hooded Merganser :
+- Band-tailed Pigeon :
+- Pacific Golden-Plover :
+- Great-tailed Grackle :
+- Black-capped Chickadee :
+- Chimney Swift :
+- Greater Roadrunner :
+- Black-whiskered Vireo :
+- Sandwich Tern :
+- Black-crested Titmouse :
+- Kentucky Warbler :
+- Mexican Jay :
+- Smooth-billed Ani :
+- Philadelphia Vireo :
+- Brewer's Blackbird :
+- Pine Warbler :
+- Black Guillemot :
+- Golden-winged Warbler :
+- Smith's Longspur :
+- Common Yellowthroat :
+- Bufflehead :
+- Wandering Tattler :
+- American Dipper :
+- Swainson's Hawk :
+- Western Tanager :
+- Black Scoter :
+- Common Eider :
+- Thick-billed Murre :
+- Shiny Cowbird :
+- White-breasted Nuthatch :
+- Rock Pigeon :
+- Gila Woodpecker :
+- Chipping Sparrow :
+- Tennessee Warbler :
+- White-faced Ibis :
+- Buff-breasted Sandpiper :
+- Hermit Warbler :
+- Parakeet Auklet :
+- Seaside Sparrow :
+- Crissal Thrasher :
+- Ruby-throated Hummingbird :
+- Mourning Dove :
+- Northern Fulmar :
+- Chestnut-backed Chickadee :
+- Evening Grosbeak :
+- Gilded Flicker :
+- Razorbill :
+- Masked Booby :
+- American Golden-Plover :
+- Great Crested Flycatcher :
+- Couch's Kingbird :
+- Black Oystercatcher :
+- Steller's Jay :
+- Western Gull :
+- Greater Pewee :
+- Blue Grosbeak :
+- Tufted Titmouse :
+- American Redstart :
+- Reddish Egret :
+- Elegant Tern :
+- Gull-billed Tern :
+- Spot-breasted Oriole :
+- Rock Wren :
+- House Wren :
+- Botteri's Sparrow :
+- Northern Shrike :
+- Prairie Falcon :
+- Kirtland's Warbler :
+- Long-billed Thrasher :
+- White-crowned Pigeon :
+- Song Sparrow :
+- Pigeon Guillemot :
+- Ruddy Turnstone :
+- Killdeer :
+- Western Screech-Owl :
+- Semipalmated Plover :
+- Black-chinned Hummingbird :
+- Buff-breasted Flycatcher :
+- Hoary Redpoll :
+- Snowy Plover :
+- Ivory Gull :
+- Little Blue Heron :
+- Cassin's Auklet :
+- Ross's Gull :
+- Worm-eating Warbler :
+- Fork-tailed Storm-Petrel :
+- Sedge Wren :
+- Nashville Warbler :
+- Lesser Prairie-Chicken :
+- McCown's Longspur :
+- Vermilion Flycatcher :
+- Surfbird :
+- Rock Sandpiper :
+- Purple Sandpiper :
+- Horned Puffin :
+- Eastern Towhee :
+- Golden-fronted Woodpecker :
+- Prairie Warbler :
+- Ruby-crowned Kinglet :
+- Northern Saw-whet Owl :
+- Blue-gray Gnatcatcher :
+- Red-eyed Vireo :
+- Cedar Waxwing :
+- Gray Hawk :
+- Grace's Warbler :
+- Painted Redstart :
+- Palm Warbler :
+- Common Pauraque :
+- American Crow :
+- Cooper's Hawk :
+- Snowy Egret :
+- Brant :
+- Common Murre :
+- Scissor-tailed Flycatcher :
+- Northern Bobwhite :
+- Western Kingbird :
+- Red-breasted Nuthatch :
+- Groove-billed Ani :
+- Hermit Thrush :
+- Anna's Hummingbird :
+- Common Redpoll :
+- Caspian Tern :
+- Bendire's Thrasher :
+- Hooded Oriole :
+- Black-billed Magpie :
+- Black-crowned Night-Heron :
+- Black-tailed Gnatcatcher :
+- Brewer's Sparrow :
+- Costa's Hummingbird :
+- Brown Creeper :
+- Rose-breasted Grosbeak :
+- Bushtit :
+- Cliff Swallow :
+- Canyon Towhee :
+- Lesser Black-backed Gull :
+- Eurasian Wigeon :
+- Common Grackle :
+- Common Merganser :
+- White-throated Sparrow :
+- Pyrrhuloxia :
+- Dark-eyed Junco :
+- Greater Sage-Grouse :
+- Wilson's Phalarope :
+- Ring-billed Gull :
+- Horned Grebe :
+- European Starling :
+- Pine Siskin :
+- Long-tailed Duck :
+- Ferruginous Hawk :
+- Cordilleran Flycatcher :
+- Green Heron :
+- Gambel's Quail :
+- Barn Owl :
+- Barn Swallow :
+- Golden-crowned Kinglet :
+- Great Kiskadee :
+- California Gull :
+- Gunnison Sage-Grouse :
+- Tree Swallow :
+- Clark's Nutcracker :
+- Iceland Gull :
+- Eastern Screech-Owl :
+- Mallard :
+- Bewick's Wren :
+- Gray Catbird :
+- Northern Mockingbird :
+- Turkey Vulture :
+- Gadwall :
+- Nuttall's Woodpecker :
+- Allen's Hummingbird :
+- Carolina Wren :
+- Spotted Owl :
+- Winter Wren :
+- Black-headed Grosbeak :
+- Brown Thrasher :
+- Harris's Sparrow :
+- Lesser Goldfinch :
+- Carolina Chickadee :
+- Least Flycatcher :
+- Least Sandpiper :
+- Say's Phoebe :
+- Brown-capped Rosy-Finch :
+- Chuck-will's-widow :
+- Piping Plover :
+- Long-eared Owl :
+- Horned Lark :
+- Eastern Whip-poor-will :
+- Calliope Hummingbird :
+- Mountain Bluebird :
+- Scarlet Tanager :
+- Elegant Trogon :
+- Merlin :
+- Swainson's Thrush :
+- Wild Turkey :
+- Eastern Bluebird :
+- Rhinoceros Auklet :
+- Bullock's Oriole :
+- Cactus Wren :
+- Oak Titmouse :
+- Yellow Warbler :
+- American Kestrel :
+- Savannah Sparrow :
+- Fish Crow :
+- Gray-cheeked Thrush :
+- Yellow-bellied Sapsucker :
+- Common Nighthawk :
+- Tundra Swan :
+- Eastern Phoebe :
+- Black-and-white Warbler :
+- Broad-winged Hawk :
+- American White Pelican :
+- Laysan Albatross :
+- Mew Gull :
+- Western Wood-Pewee :
+- Orange-crowned Warbler :
+- White-winged Dove :
+- Burrowing Owl :
+- Pacific Wren :
+- Blue-winged Teal :
+- Pied-billed Grebe :
+- Bobolink :
+- Willet :
+- American Tree Sparrow :
+- Peregrine Falcon :
+- Purple Martin :
+- Red-bellied Woodpecker :
+- Red-naped Sapsucker :
+- Acorn Woodpecker :
+- Ridgway's Rail :
+- Ring-necked Pheasant :
+- Ruddy Duck :
+- Rusty Blackbird :
+- Sabine's Gull :
+- Cassin's Finch :
+- Pygmy Nuthatch :
+- American Woodcock :
+- Laughing Gull :
+- California Scrub-Jay :
+- Woodhouse's Scrub-Jay :
+- Downy Woodpecker :
+- Indigo Bunting :
+- American Black Duck :
+- Arctic Warbler :
+- Bald Eagle :
+- Barred Owl :
+- Bell's Sparrow :
+- Canada Goose :
+- Black Phoebe :
+- Black Turnstone :
+- Black-bellied Whistling-Duck :
+- Prothonotary Warbler :
+- Brown Pelican :
+- Brown-headed Cowbird :
+- Buff-bellied Hummingbird :
+- Western Meadowlark :
+- California Quail :
+- Clay-colored Sparrow :
+- Lincoln's Sparrow :
+- Spotted Sandpiper :
+- Ruffed Grouse :
+- Common Loon :
+- Great Egret :
+- Mute Swan :
+- Double-crested Cormorant :
+- Golden Eagle :
+- Red-headed Woodpecker :
+- Great Gray Owl :
+- Rufous-crowned Sparrow :
+- House Finch :
+- Common Raven :
+- Juniper Titmouse :
+- Great Black-backed Gull :
+- Clapper Rail :
+- Golden-crowned Sparrow :
+- Hairy Woodpecker :
+- Gyrfalcon :
+- Lesser Yellowlegs :
+- Swallow-tailed Kite :
+- Green-winged Teal :
+- Loggerhead Shrike :
+- Common Goldeneye :
+- Lazuli Bunting :
+- Northern Cardinal :
+- Ring-necked Duck :
+- Mangrove Cuckoo :
+- Mississippi Kite :
+- Cackling Goose :
+- Northern Goshawk :
+- Northern Pygmy-Owl :
+- Eastern Wood-Pewee :
+- Summer Tanager :
+- Black-footed Albatross :
+- Orchard Oriole :
+- Ovenbird :
+- Pileated Woodpecker :
+- Purple Finch :
+- American Robin :
+- Golden-cheeked Warbler :
+- Red-breasted Sapsucker :
+- Red-cockaded Woodpecker :
+- Red-faced Warbler :
+- Snowy Owl :
+- Warbling Vireo :
+- Baltimore Oriole :
+- Rough-legged Hawk :
+- Sagebrush Sparrow :
+- Sanderling :
+- Blackpoll Warbler :
+- Cattle Egret :
+- Steller's Eider :
+- Least Grebe :
+- Little Gull :
+- Red-footed Booby :
+- California Condor :
+- Muscovy Duck :
+- Heermann's Gull :
+- Eastern Meadowlark :
+- Inca Dove :
+- Mountain Chickadee :
+- Lucifer Hummingbird :
+- Townsend's Solitaire :
+- Tufted Puffin :
+- Varied Thrush :
+- American Coot :
+- Whooping Crane :
+- Wood Duck :
+- Wood Thrush :
+- Wrentit :
+- Yellow-breasted Chat :
+- Green-tailed Towhee :
+- Violet-green Swallow :
+- Pine Grosbeak :
+- Blue Jay :
+- American Goldfinch :
+- Red-tailed Hawk :
+- Short-eared Owl :
+- Veery :
+- Sage Thrasher :
+- Wilson's Snipe :
+- Trumpeter Swan :
+- Fox Sparrow :
+- Rufous-winged Sparrow :
+- Osprey :
+- Snow Goose :
+- Brown-headed Nuthatch :
+- Boat-tailed Grackle :
+- Great Blue Heron :
+- Sandhill Crane :
+- Red-shouldered Hawk :
+- Yellow-crowned Night-Heron :
+- White Ibis :
+- White-crowned Sparrow :
+- Ancient Murrelet :
+- Willow Flycatcher :
+- Wilson's Warbler :
+- Eurasian Collared-Dove :
+- Redhead :
+- Yellow-headed Blackbird :
+- Eastern Kingbird :
+- Great Horned Owl :
+- Ash-throated Flycatcher :
+- Belted Kingfisher :
+- Black Vulture :
+- Yellow-billed Cuckoo :
+- Yellow-rumped Warbler :
+- House Sparrow :
+- American Bittern :
+- California Towhee :
+- Sharp-shinned Hawk :
+- Anhinga :
+- Atlantic Puffin :
+- Dovekie :
+- Marbled Murrelet :
+- Bronzed Cowbird :
+- Red-winged Blackbird :
+- Tricolored Blackbird :
+- Painted Bunting :
+- Varied Bunting :
+- Snow Bunting :
+- Crested Caracara :
+- Hepatic Tanager :
+- Boreal Chickadee :
+- Brandt's Cormorant :
+- Great Cormorant :
+- Neotropic Cormorant :
+- Pelagic Cormorant :
+- Northwestern Crow :
+- Black-billed Cuckoo :
+- Dickcissel :
+- African Collared-Dove :
+- Common Ground Dove :
+- White-tipped Dove :
+- American Wigeon :
+- Barrow's Goldeneye :
+- Canvasback :
+- Cinnamon Teal :
+- Fulvous Whistling-Duck :
+- Greater Scaup :
+- Harlequin Duck :
+- King Eider :
+- Lesser Scaup :
+- Mottled Duck :
+- Northern Pintail :
+- Northern Shoveler :
+- Red-breasted Merganser :
+- Surf Scoter :
+- White-winged Scoter :
+- Aplomado Falcon :
+- Black Rosy-Finch :
+- Cassia Crossbill :
+- Gray-crowned Rosy-Finch :
+- Lawrence's Goldfinch :
+- Red Crossbill :
+- White-winged Crossbill :
+- Acadian Flycatcher :
+- Alder Flycatcher :
+- Cassin's Kingbird :
+- Dusky Flycatcher :
+- Gray Flycatcher :
+- Hammond's Flycatcher :
+- Northern Beardless-Tyrannulet :
+- Olive-sided Flycatcher :
+- Pacific-slope Flycatcher :
+- Tropical Kingbird :
+- Yellow-bellied Flycatcher :
+- Chukar :
+- Dusky Grouse :
+- Gray Partridge :
+- Greater Prairie-Chicken :
+- Montezuma Quail :
+- Mountain Quail :
+- Plain Chachalaca :
+- Rock Ptarmigan :
+- Scaled Quail :
+- Sharp-tailed Grouse :
+- Sooty Grouse :
+- Spruce Grouse :
+- White-tailed Ptarmigan :
+- Willow Ptarmigan :
+- Emperor Goose :
+- Greater White-fronted Goose :
+- Ross's Goose :
+- California Gnatcatcher :
+- Clark's Grebe :
+- Eared Grebe :
+- Red-necked Grebe :
+- Western Grebe :
+- Black-legged Kittiwake :
+- Bonaparte's Gull :
+- Franklin's Gull :
+- Glaucous Gull :
+- Glaucous-winged Gull :
+- Northern Harrier :
+- Harris's Hawk :
+- White-tailed Hawk :
+- Zone-tailed Hawk :
+- Least Bittern :
+- Tricolored Heron :
+- Blue-throated Mountain-gem :
+- Broad-billed Hummingbird :
+- Broad-tailed Hummingbird :
+- Rivoli's Hummingbird :
+- Rufous Hummingbird :
+- Glossy Ibis :
+- Long-tailed Jaeger :
+- Parasitic Jaeger :
+- Pomarine Jaeger :
+- Canada Jay :
+- Florida Scrub-Jay :
+- Green Jay :
+- Pinyon Jay :
+- Snail Kite :
+- White-tailed Kite :
+- Limpkin :
+- Chestnut-collared Longspur :
+- Lapland Longspur :
+- Pacific Loon :
+- Red-throated Loon :
+- Yellow-billed Magpie :
+- Common Poorwill :
+- Lesser Nighthawk :
+- Eurasian Tree Sparrow :
+- Altamira Oriole :
+- Audubon's Oriole :
+- Scott's Oriole :
+- Boreal Owl :
+- Flammulated Owl :
+- Northern Hawk Owl :
+- Monk Parakeet :
+- Phainopepla :
+- American Pipit :
+- Sprague's Pipit :
+- Black-bellied Plover :
+- Mountain Plover :
+- Wilson's Plover :
+- Common Gallinule :
+- Purple Gallinule :
+- Black Rail :
+- King Rail :
+- Sora :
+- Virginia Rail :
+- Yellow Rail :
+- Chihuahuan Raven :
+- Baird's Sandpiper :
+- Dunlin :
+- Greater Yellowlegs :
+- Long-billed Dowitcher :
+- Pectoral Sandpiper :
+- Red Knot :
+- Short-billed Dowitcher :
+- Solitary Sandpiper :
+- Stilt Sandpiper :
+- Western Sandpiper :
+- White-rumped Sandpiper :
+- Blue-footed Booby :
+- Brown Booby :
+- Northern Gannet :
+- American Avocet :
+- American Oystercatcher :
+- Black-necked Stilt :
+- Hudsonian Godwit :
+- Long-billed Curlew :
+- Marbled Godwit :
+- Red Phalarope :
+- Red-necked Phalarope :
+- Upland Sandpiper :
+- Whimbrel :
+- Black Skimmer :
+- Bachman's Sparrow :
+- Baird's Sparrow :
+- Black-chinned Sparrow :
+- Black-throated Sparrow :
+- Cassin's Sparrow :
+- Grasshopper Sparrow :
+- Henslow's Sparrow :
+- Lark Bunting :
+- Lark Sparrow :
+- LeConte's Sparrow :
+- Nelson's Sparrow :
+- Olive Sparrow :
+- Saltmarsh Sparrow :
+- Swamp Sparrow :
+- Vesper Sparrow :
+- Yellow-eyed Junco :
+- Roseate Spoonbill :
+- Wood Stork :
+- Bank Swallow :
+- Cave Swallow :
+- Northern Rough-winged Swallow :
+- Black Swift :
+- Vaux's Swift :
+- White-throated Swift :
+- Black Tern :
+- Common Tern :
+- Forster's Tern :
+- Least Tern :
+- Roseate Tern :
+- Royal Tern :
+- California Thrasher :
+- Curve-billed Thrasher :
+- LeConte's Thrasher :
+- Bicknell's Thrush :
+- Western Bluebird :
+- Bridled Titmouse :
+- Abert's Towhee :
+- Spotted Towhee :
+- Verdin :
+- Bell's Vireo :
+- Black-capped Vireo :
+- Blue-headed Vireo :
+- Cassin's Vireo :
+- Gray Vireo :
+- Hutton's Vireo :
+- Plumbeous Vireo :
+- White-eyed Vireo :
+- Yellow-throated Vireo :
+- Bay-breasted Warbler :
+- Black-throated Blue Warbler :
+- Black-throated Gray Warbler :
+- Blackburnian Warbler :
+- Blue-winged Warbler :
+- Canada Warbler :
+- Cape May Warbler :
+- Cerulean Warbler :
+- Chestnut-sided Warbler :
+- Connecticut Warbler :
+- Hooded Warbler :
+- Louisiana Waterthrush :
+- Lucy's Warbler :
+- MacGillivray's Warbler :
+- Magnolia Warbler :
+- Mourning Warbler :
+- Northern Parula :
+- Northern Waterthrush :
+- Olive Warbler :
+- Swainson's Warbler :
+- Townsend's Warbler :
+- Virginia's Warbler :
+- Yellow-throated Warbler :
+- Bohemian Waxwing :
+- American Three-toed Woodpecker :
+- Arizona Woodpecker :
+- Black-backed Woodpecker :
+- Ivory-billed Woodpecker :
+- Ladder-backed Woodpecker :
+- Lewis's Woodpecker :
+- Northern Flicker :
+- White-headed Woodpecker :
+- Williamson's Sapsucker :
+- Canyon Wren :
+- Marsh Wren :
+
+# gotoHelp
+- Can you help me
+- Help
+- What do you do?
+- Help Menu
+- Can you help?
+- Are you broken?
+- hello
+- reset 
+- restart
+# None
+- https://dev-int.teams.microsoft.com/appvalidation.html
+- afdhsajkfhdsak
+- ribble rabble
+- fuck you
+- shit
+- fjkdsajkdfsa
+- rewqifdsabjn
+- ass
+
+# gotoRandomBird
+- Look up a Random Bird
+- Random Bird
+- Can you get a Random Bird?
+- Random
+- Random Please
+- Do a random bird.
+- Look up Random
+- Learn a Random Bird 🦆
+- Learn about a bird
+- Learn about a random bird
+
+# gotoVisionAI
+- Test Vision AI
+- Test Bird Vision AI
+- I want to test the photo
+- Test Vision AI
+- Vision AI
+
+# gotoWelcome
+- Hello
+- Welcome
+- Start
+- Welcome Message
+- Hello, BirdBot

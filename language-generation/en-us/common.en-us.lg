@@ -1,0 +1,487 @@
+#BirdCard
+[Activity
+    Attachments = ${json(BirdCardjson())}
+]
+
+# BirdCardjson()
+- ```
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.2",
+    "body": [
+        {
+            "type": "TextBlock",
+            "horizontalAlignment": "Center",
+            "text": "${user.BirdData.content[0].BirdName}",
+            "size": "ExtraLarge",
+            "weight": "Bolder"
+        },
+        {
+            "type": "Image",
+            "separator": true,
+            "spacing": "Medium",
+            "url": "${user.BirdData.content[0].botphoto}"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 30,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "AI Confidence:",
+                            "wrap": true,
+                            "color": "Good",
+                            "size": "Large"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": 70,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${substring(user.BirdScoreResult,0,5)}%",
+                            "wrap": true,
+                            "weight": "Bolder",
+                            "color": "Good",
+                            "size": "Large"
+                        }
+                    ]
+                }
+            ],
+            "separator": true,
+            "horizontalAlignment": "Center",
+            "spacing": "Medium"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 30,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Scientific Name:",
+                            "wrap": true
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": 70,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${user.BirdData.content[0].BirdScientificName}",
+                            "wrap": true,
+                            "weight": "Bolder"
+                        }
+                    ]
+                }
+            ],
+            "horizontalAlignment": "Center",
+            "separator": true,
+            "spacing": "Medium"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 30,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Type:",
+                            "wrap": true
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": 70,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${user.BirdData.content[0].type}",
+                            "wrap": true,
+                            "weight": "Bolder"
+                        }
+                    ]
+                }
+            ],
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 30,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Habitat:",
+                            "wrap": true
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": 70,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${user.BirdData.content[0].habitat}",
+                            "wrap": true,
+                            "weight": "Bolder"
+                        }
+                    ]
+                }
+            ],
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 30,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Food:",
+                            "wrap": true
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": 70,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${user.BirdData.content[0].food}",
+                            "wrap": true,
+                            "weight": "Bolder"
+                        }
+                    ]
+                }
+            ],
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 30,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Nesting:",
+                            "wrap": true
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": 70,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${user.BirdData.content[0].nesting}",
+                            "wrap": true,
+                            "weight": "Bolder"
+                        }
+                    ]
+                }
+            ],
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 30,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Behavior:",
+                            "wrap": true
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": 70,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${user.BirdData.content[0].behavior}",
+                            "wrap": true,
+                            "weight": "Bolder"
+                        }
+                    ]
+                }
+            ],
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "TextBlock",
+            "text": "${user.BirdData.content[0].BirdSummary}",
+            "separator": true,
+            "wrap": true,
+            "spacing": "Medium"
+        }
+    ]
+}
+```
+# BirdCardRandom()
+[Activity
+    Attachments = ${json(BirdCardRandomjson())}
+]
+#BirdCardRandomjson
+- ```
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.2",
+    "body": [
+        {
+            "type": "TextBlock",
+            "horizontalAlignment": "Center",
+            "text": "${user.BirdData.content[0].birdName}",
+            "size": "ExtraLarge",
+            "weight": "Bolder"
+        },
+        {
+            "type": "Image",
+            "separator": true,
+            "spacing": "Medium",
+            "url": "${user.BirdData.content[0].botphoto}"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 30,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Scientific Name:",
+                            "wrap": true
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": 70,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${user.BirdData.content[0].BirdScientificName}",
+                            "wrap": true,
+                            "weight": "Bolder"
+                        }
+                    ]
+                }
+            ],
+            "horizontalAlignment": "Center",
+            "separator": true,
+            "spacing": "Medium"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 30,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Type:",
+                            "wrap": true
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": 70,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${user.BirdData.content[0].type}",
+                            "wrap": true,
+                            "weight": "Bolder"
+                        }
+                    ]
+                }
+            ],
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 30,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Habitat:",
+                            "wrap": true
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": 70,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${user.BirdData.content[0].habitat}",
+                            "wrap": true,
+                            "weight": "Bolder"
+                        }
+                    ]
+                }
+            ],
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 30,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Food:",
+                            "wrap": true
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": 70,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${user.BirdData.content[0].food}",
+                            "wrap": true,
+                            "weight": "Bolder"
+                        }
+                    ]
+                }
+            ],
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 30,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Nesting:",
+                            "wrap": true
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": 70,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${user.BirdData.content[0].nesting}",
+                            "wrap": true,
+                            "weight": "Bolder"
+                        }
+                    ]
+                }
+            ],
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 30,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Behavior:",
+                            "wrap": true
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": 70,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${user.BirdData.content[0].behavior}",
+                            "wrap": true,
+                            "weight": "Bolder"
+                        }
+                    ]
+                }
+            ],
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "TextBlock",
+            "text": "${user.BirdData.content[0].BirdSummary}",
+            "separator": true,
+            "wrap": true,
+            "spacing": "Medium"
+        }
+    ]
+}
+```
+
+#SupportCard
+[Activity
+    Attachments = ${json(SupportCardjson())}
+]
+
+#SupportCardjson
+- ```
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "${user.SupportPhrase}",
+            "wrap": true
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.OpenUrl",
+                    "title": "Supported Bird Names",
+                    "url": "https://chatmode.io/birdbot/"
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.2"
+}
+```

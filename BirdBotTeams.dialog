@@ -1,0 +1,17 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "$designer": {
+      "name": "BirdBotTeams",
+      "description": "",
+      "id": "Iph1f3"
+    }
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [],
+  "$schema": "https://raw.githubusercontent.com/microsoft/BotFramework-Composer/stable/Composer/packages/server/schemas/sdk.schema",
+  "generator": "BirdBotTeams.lg",
+  "id": "BirdBotTeams",
+  "recognizer": "BirdBotTeams.lu.qna"
+}

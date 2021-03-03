@@ -1,0 +1,8 @@
+{
+  "$kind": "Microsoft.MultiLanguageRecognizer",
+  "id": "LUIS_birdbot",
+  "recognizers": {
+    "en-us": "birdbot.en-us.lu",
+    "": "birdbot.en-us.lu"
+  }
+}

@@ -1,0 +1,109 @@
+[import](common.lg)
+
+
+# SendActivity_csHiCb()
+- ${SupportCard()}
+
+# SendActivity_ip9PRY()
+- Sure I'll get information on the ${user.BirdLookup} for you!
+- ${user.BirdLookup} info coming right up! One moment please!
+- No problem looking up the ${user.BirdLookup}.
+
+# SendActivity_N4ZiCb()
+- Sorry that bird name doesn't exist in our database, please use the full common name of the bird.
+
+
+#WelcomeCard
+[Activity
+    Attachments = ${json(WelcomeCardjson())}
+]
+
+#WelcomeCardjson
+- ```
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "BirdBot - Welcome Message",
+            "horizontalAlignment": "Center",
+            "size": "ExtraLarge",
+            "weight": "Bolder",
+            "color": "Accent"
+        },
+        {
+            "type": "TextBlock",
+            "text": "BirdBot is a learning application that is designed to teach people about birds!",
+            "wrap": true,
+            "separator": true,
+            "horizontalAlignment": "Center",
+            "spacing": "Large",
+            "size": "Large"
+        },
+        {
+            "type": "TextBlock",
+            "text": "This application is knows 600+ bird names and recognizes 30+ different birds by photo.",
+            "spacing": "Large",
+            "horizontalAlignment": "Center",
+            "wrap": true,
+            "size": "Large"
+        },
+        {
+            "type": "TextBlock",
+            "text": "\nSend us a photo, tap the buttons or talk to the bot to start learning about birds.",
+            "horizontalAlignment": "Center",
+            "size": "Large",
+            "spacing": "Large",
+            "wrap": true
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.OpenUrl",
+                    "title": "BirdBot Tutorial",
+                    "url": "https://chatmode.io/birdbot/"
+                }
+            ],
+            "separator": true,
+            "spacing": "Large"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.2"
+}
+```
+
+# SendActivity_7YUhKB()
+- ${WelcomeCard()}
+
+# SendActivity_oQl5cq()
+- Right on it, getting bird #${user.RandomBirdID} out of 611 🦃
+- I can do that for you, getting bird #${user.RandomBirdID} out of 611 🐦
+- Will do, getting bird #${user.RandomBirdID} out of 611 🕊️
+- Coming right up, looking up bird #${user.RandomBirdID} out of 611 🦅
+- As you requested, getting bird #${user.RandomBirdID} out of 611 🦆
+- No problem, getting bird #${user.RandomBirdID} out of 611 🦢
+- Sure can do, getting bird #${user.RandomBirdID} out of 611 🦉
+- Coming in hot, getting bird #${user.RandomBirdID} out of 611 🦃
+# SendActivity_gnPA5M()
+- ${BirdCardRandom()}
+# SendActivity_GGkgWw()
+- Sure I'll get information on the ${user.BirdLookup} for you! 🐦
+- ${user.BirdLookup} info coming right up! One moment please! 🦃
+- No problem looking up the ${user.BirdLookup}. 🦆
+
+
+# TextInput_Prompt_XSj2QG()
+- Sure, what bird are you trying to look up?
+
+# SendActivity_MWWEO9()
+- ${SupportCard()}
+
+# SendActivity_Y4Wmdb()
+- Sure, just send me a photo and I'll do my best to guess the bird in the photo.
+# SendActivity_zFdovt()
+- ${WelcomeCard()}
+
+# SendActivity_h4nPOE()
+- ${WelcomeCard()}

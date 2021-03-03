@@ -1,0 +1,19 @@
+{
+  "profileName": "BirdBot",
+  "jobId": "cf773f58-2e15-43a9-9c95-e847d753e148",
+  "projectId": "27324.077206787468",
+  "time": "2021-03-02T17:52:59.596Z",
+  "log": [
+    "Creating Azure resources...",
+    "Checking the Existence of the Resource Group ...",
+    "Creating Resource Group ...",
+    "> Creating App Registration ...",
+    "Start to add password for App, Id : c9ec6fd7-20ef-4547-8e98-28c13437a31b",
+    "> Create App Registration Success! ID: c9ec6fd7-20ef-4547-8e98-28c13437a31b",
+    "Deploying Web App Resource ...",
+    "Deploying Bot Resource ...",
+    "{\"stack\":\"Error: Bot is not valid. Errors: The bot name is already registered to another bot application..  See https://aka.ms/bot-requirements for detailed requirements.\\n    at new t (C:\\\\Composer\\\\Bot Framework Composer\\\\resources\\\\app.asar.unpacked\\\\extensions\\\\azurePublish\\\\lib\\\\node\\\\index.js:16:37408)\\n    at C:\\\\Composer\\\\Bot Framework Composer\\\\resources\\\\app.asar.unpacked\\\\extensions\\\\azurePublish\\\\lib\\\\node\\\\index.js:18:103741\",\"message\":\"Bot is not valid. Errors: The bot name is already registered to another bot application..  See https://aka.ms/bot-requirements for detailed requirements.\",\"code\":\"InvalidBotData\",\"statusCode\":400,\"request\":{\"body\":\"{\\\"location\\\":\\\"global\\\",\\\"sku\\\":{\\\"name\\\":\\\"F0\\\"},\\\"kind\\\":\\\"bot\\\",\\\"properties\\\":{\\\"displayName\\\":\\\"BirdBot\\\",\\\"endpoint\\\":\\\"https://birdbot.azurewebsites.net/api/messages\\\",\\\"msaAppId\\\":\\\"c9ec6fd7-20ef-4547-8e98-28c13437a31b\\\"}}\"},\"response\":{\"body\":\"{\\\"error\\\":{\\\"code\\\":\\\"InvalidBotData\\\",\\\"message\\\":\\\"Bot is not valid. Errors: The bot name is already registered to another bot application..  See https://aka.ms/bot-requirements for detailed requirements.\\\"}}\"},\"body\":{}}",
+    "{\"name\":\"BOT_REGISTRATION_ERROR\",\"message\":\"Error - Bot is not valid. Errors: The bot name is already registered to another bot application..  See https://aka.ms/bot-requirements for detailed requirements.\",\"stack\":\"Error\\n    at new n (C:\\\\Composer\\\\Bot Framework Composer\\\\resources\\\\app.asar.unpacked\\\\extensions\\\\azurePublish\\\\lib\\\\node\\\\index.js:18:97996)\\n    at Object.t.createCustomizeError (C:\\\\Composer\\\\Bot Framework Composer\\\\resources\\\\app.asar.unpacked\\\\extensions\\\\azurePublish\\\\lib\\\\node\\\\index.js:18:98326)\\n    at e.<anonymous> (C:\\\\Composer\\\\Bot Framework Composer\\\\resources\\\\app.asar.unpacked\\\\extensions\\\\azurePublish\\\\lib\\\\node\\\\index.js:479:33482)\\n    at C:\\\\Composer\\\\Bot Framework Composer\\\\resources\\\\app.asar.unpacked\\\\extensions\\\\azurePublish\\\\lib\\\\node\\\\index.js:479:12347\\n    at Object.throw (C:\\\\Composer\\\\Bot Framework Composer\\\\resources\\\\app.asar.unpacked\\\\extensions\\\\azurePublish\\\\lib\\\\node\\\\index.js:479:12452)\\n    at s (C:\\\\Composer\\\\Bot Framework Composer\\\\resources\\\\app.asar.unpacked\\\\extensions\\\\azurePublish\\\\lib\\\\node\\\\index.js:479:11217)\"}",
+    "BOT_REGISTRATION_ERROR - Error - Bot is not valid. Errors: The bot name is already registered to another bot application..  See https://aka.ms/bot-requirements for detailed requirements.\n        detail message can see provision.BirdBot.log in your bot folder"
+  ]
+}

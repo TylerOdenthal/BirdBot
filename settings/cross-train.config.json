@@ -1,0 +1,9 @@
+{
+  "birdbot.en-us": {
+    "rootDialog": true,
+    "triggers": {
+      "gotoRandomBird": [],
+      "gotoVisionAI": []
+    }
+  }
+}

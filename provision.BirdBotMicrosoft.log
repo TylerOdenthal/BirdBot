@@ -1,0 +1,20 @@
+{
+  "profileName": "BirdBotMicrosoft",
+  "jobId": "8a54a8d9-2907-4d44-be15-ba4b4e32bc46",
+  "projectId": "27324.077206787468",
+  "time": "2021-03-02T17:54:45.548Z",
+  "log": [
+    "Creating Azure resources...",
+    "Checking the Existence of the Resource Group ...",
+    "Creating Resource Group ...",
+    "> Creating App Registration ...",
+    "Start to add password for App, Id : c5c6f409-21dc-4bd8-93b7-29e9a08406ea",
+    "> Create App Registration Success! ID: c5c6f409-21dc-4bd8-93b7-29e9a08406ea",
+    "Deploying Web App Resource ...",
+    "Deploying Bot Resource ...",
+    "Deploying Cosmos DB Resource ...",
+    "{\"stack\":\"Error: The subscription is not registered to use namespace 'Microsoft.DocumentDB'. See https://aka.ms/rps-not-found for how to register subscriptions.\\n    at new t (C:\\\\Composer\\\\Bot Framework Composer\\\\resources\\\\app.asar.unpacked\\\\extensions\\\\azurePublish\\\\lib\\\\node\\\\index.js:16:37408)\\n    at C:\\\\Composer\\\\Bot Framework Composer\\\\resources\\\\app.asar.unpacked\\\\extensions\\\\azurePublish\\\\lib\\\\node\\\\index.js:18:103741\",\"message\":\"The subscription is not registered to use namespace 'Microsoft.DocumentDB'. See https://aka.ms/rps-not-found for how to register subscriptions.\",\"code\":\"MissingSubscriptionRegistration\",\"statusCode\":409,\"request\":{\"body\":\"{\\\"location\\\":\\\"westus2\\\",\\\"properties\\\":{\\\"locations\\\":[{\\\"locationName\\\":\\\"westus2\\\",\\\"failoverPriority\\\":0}],\\\"databaseAccountOfferType\\\":\\\"Standard\\\"}}\"},\"response\":{\"body\":\"{\\\"error\\\":{\\\"code\\\":\\\"MissingSubscriptionRegistration\\\",\\\"message\\\":\\\"The subscription is not registered to use namespace 'Microsoft.DocumentDB'. See https://aka.ms/rps-not-found for how to register subscriptions.\\\",\\\"details\\\":[{\\\"code\\\":\\\"MissingSubscriptionRegistration\\\",\\\"target\\\":\\\"Microsoft.DocumentDB\\\",\\\"message\\\":\\\"The subscription is not registered to use namespace 'Microsoft.DocumentDB'. See https://aka.ms/rps-not-found for how to register subscriptions.\\\"}]}}\"},\"body\":{\"message\":\"The subscription is not registered to use namespace 'Microsoft.DocumentDB'. See https://aka.ms/rps-not-found for how to register subscriptions.\",\"code\":\"MissingSubscriptionRegistration\"}}",
+    "{\"name\":\"CREATE_COSMOSDB_ERROR\",\"message\":\"Error - The subscription is not registered to use namespace 'Microsoft.DocumentDB'. See https://aka.ms/rps-not-found for how to register subscriptions.\",\"stack\":\"Error\\n    at new n (C:\\\\Composer\\\\Bot Framework Composer\\\\resources\\\\app.asar.unpacked\\\\extensions\\\\azurePublish\\\\lib\\\\node\\\\index.js:18:97996)\\n    at Object.t.createCustomizeError (C:\\\\Composer\\\\Bot Framework Composer\\\\resources\\\\app.asar.unpacked\\\\extensions\\\\azurePublish\\\\lib\\\\node\\\\index.js:18:98326)\\n    at e.<anonymous> (C:\\\\Composer\\\\Bot Framework Composer\\\\resources\\\\app.asar.unpacked\\\\extensions\\\\azurePublish\\\\lib\\\\node\\\\index.js:479:27747)\\n    at C:\\\\Composer\\\\Bot Framework Composer\\\\resources\\\\app.asar.unpacked\\\\extensions\\\\azurePublish\\\\lib\\\\node\\\\index.js:479:12347\\n    at Object.throw (C:\\\\Composer\\\\Bot Framework Composer\\\\resources\\\\app.asar.unpacked\\\\extensions\\\\azurePublish\\\\lib\\\\node\\\\index.js:479:12452)\\n    at s (C:\\\\Composer\\\\Bot Framework Composer\\\\resources\\\\app.asar.unpacked\\\\extensions\\\\azurePublish\\\\lib\\\\node\\\\index.js:479:11217)\"}",
+    "CREATE_COSMOSDB_ERROR - Error - The subscription is not registered to use namespace 'Microsoft.DocumentDB'. See https://aka.ms/rps-not-found for how to register subscriptions.\n        detail message can see provision.BirdBotMicrosoft.log in your bot folder"
+  ]
+}

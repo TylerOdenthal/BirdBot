@@ -1,0 +1,353 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "$designer": {
+      "name": "BirdBot",
+      "id": "SEaEBi"
+    }
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnConversationUpdateActivity",
+      "$designer": {
+        "id": "376720",
+        "name": "WelcomeMessage"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.Foreach",
+          "$designer": {
+            "id": "518944",
+            "name": "Loop: for each item"
+          },
+          "itemsProperty": "turn.Activity.membersAdded",
+          "actions": [
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "641773",
+                "name": "Branch: if/else"
+              },
+              "condition": "string(dialog.foreach.value.id) != string(turn.Activity.Recipient.id)",
+              "actions": [],
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "h4nPOE"
+                  },
+                  "activity": "${SendActivity_h4nPOE()}"
+                },
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "HeNRIG"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "getMenu"
+                }
+              ]
+            }
+          ],
+          "value": "dialog.foreach.value",
+          "index": "dialog.foreach.index"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "YegLrC"
+      },
+      "intent": "gotoMenu",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "SIoyOy"
+          },
+          "activityProcessed": true,
+          "dialog": "getMenu"
+        }
+      ],
+      "condition": "#gotoMenu.score > 0.8"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "4eyZkD"
+      },
+      "intent": "gotoBirdLookup",
+      "actions": [
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "T2qKfA",
+            "name": "IfBirdNameExists"
+          },
+          "condition": "@BirdName != null",
+          "elseActions": [
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "nuMNsx",
+                "name": "ifButtonClick"
+              },
+              "condition": "turn.activity.text == \"Lookup by Common Name 🔎\"",
+              "actions": [
+                {
+                  "$kind": "Microsoft.TextInput",
+                  "$designer": {
+                    "id": "XSj2QG"
+                  },
+                  "disabled": false,
+                  "maxTurnCount": 1,
+                  "alwaysPrompt": true,
+                  "allowInterruptions": true,
+                  "prompt": "${TextInput_Prompt_XSj2QG()}"
+                }
+              ],
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.SetProperty",
+                  "$designer": {
+                    "id": "wws71D",
+                    "name": "SetBirdNameSupport"
+                  },
+                  "property": "user.SupportPhrase",
+                  "value": "Sorry, ${turn.activity.text} doesn't appear in our list of 611 common bird names. To view a list of supported bird names, please tap the URL below."
+                },
+                {
+                  "$kind": "Microsoft.IfCondition",
+                  "$designer": {
+                    "id": "bPG5Mh",
+                    "name": "ifContainsBirdType"
+                  },
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SetProperty",
+                      "$designer": {
+                        "id": "xeDafp",
+                        "name": "SetBirdTypeSupport"
+                      },
+                      "property": "user.SupportPhrase",
+                      "value": "Sorry, ${turn.activity.text} is a type of bird which matchs to many names. To view a list of supported bird names, please tap the URL below."
+                    }
+                  ],
+                  "elseActions": [
+                    {
+                      "$kind": "Microsoft.IfCondition",
+                      "$designer": {
+                        "id": "JrrpRu",
+                        "name": "IfContainsHTML"
+                      },
+                      "condition": "turn.activity.attachments[0].contentType == \"image/*\"",
+                      "actions": [
+                        {
+                          "$kind": "Microsoft.SetProperty",
+                          "$designer": {
+                            "id": "SILHCJ",
+                            "name": "SetBirdTypeSupport"
+                          },
+                          "property": "user.SupportPhrase",
+                          "value": "Sorry, you may have copy and pasted some funky HTML into the text window. Please paste the data as plain text for better results."
+                        }
+                      ]
+                    }
+                  ],
+                  "condition": "turn.activity.text == \"Parrot\"||\"Sparrow\""
+                },
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "MWWEO9",
+                    "name": "SupportCard"
+                  },
+                  "activity": "${SendActivity_MWWEO9()}"
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "$kind": "Microsoft.SetProperty",
+              "$designer": {
+                "id": "zRG7cH",
+                "name": "SetBirdNameEntity"
+              },
+              "property": "user.BirdLookup",
+              "value": "=@BirdName"
+            },
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "GGkgWw",
+                "name": "AcceptedBirdName"
+              },
+              "activity": "${SendActivity_GGkgWw()}"
+            },
+            {
+              "$kind": "Microsoft.BeginDialog",
+              "$designer": {
+                "id": "M0vp6N",
+                "name": "gotoBirdLookupDialog"
+              },
+              "activityProcessed": true,
+              "dialog": "getBirdLookup"
+            }
+          ]
+        }
+      ],
+      "condition": "#gotoBirdLookup.score >= 0.80"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "3ck81z"
+      },
+      "intent": "gotoHelp",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "7YUhKB",
+            "name": "DirectSupport"
+          },
+          "activity": "${SendActivity_7YUhKB()}"
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "3MMvvP"
+          },
+          "activityProcessed": true,
+          "dialog": "getMenu"
+        }
+      ],
+      "condition": "#gotoHelp.score > 0.8"
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "R9mD8g"
+      },
+      "intent": "None",
+      "condition": "turn.recognized.intents.None.score >= 0.80",
+      "actions": [
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "th35t9"
+          },
+          "property": "user.SupportPhrase",
+          "value": "Sorry I don't understand what you are trying to do."
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "csHiCb",
+            "name": "ConfusedSupport"
+          },
+          "activity": "${SendActivity_csHiCb()}"
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "3MMvvP"
+          },
+          "activityProcessed": true,
+          "dialog": "getMenu"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "ELzMoY"
+      },
+      "intent": "gotoRandomBird",
+      "actions": [
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "QV3wKc"
+          },
+          "property": "user.RandomBirdID",
+          "value": "${rand(1,612)}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "oQl5cq",
+            "name": "RandomBirdAccepted"
+          },
+          "activity": "${SendActivity_oQl5cq()}"
+        },
+        {
+          "$kind": "Microsoft.HttpRequest",
+          "$designer": {
+            "id": "dX9KjT"
+          },
+          "method": "GET",
+          "url": "https://sheet.best/api/sheets/336f6890-54f6-473b-b91a-bfa2d3b91843/search?BirdID=${user.RandomBirdID}",
+          "resultProperty": "user.BirdData"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "gnPA5M",
+            "name": "RandomBirdCard"
+          },
+          "activity": "${SendActivity_gnPA5M()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "Wj3O2H"
+      },
+      "intent": "gotoVisionAI",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "Y4Wmdb"
+          },
+          "activity": "${SendActivity_Y4Wmdb()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "Qve5tc"
+      },
+      "intent": "gotoWelcome",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "zFdovt",
+            "name": "WelcomeCard"
+          },
+          "activity": "${SendActivity_zFdovt()}"
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "YI3le7"
+          },
+          "activityProcessed": true,
+          "dialog": "getMenu"
+        }
+      ]
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/microsoft/BotFramework-Composer/stable/Composer/packages/server/schemas/sdk.schema",
+  "generator": "birdbot.lg",
+  "recognizer": "birdbot.lu.qna",
+  "id": "birdbot"
+}
