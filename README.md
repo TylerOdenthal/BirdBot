@@ -1,3 +1,5 @@
+This is the Microsoft Composer File for BirdBot, please download the BirdBotTeams.zip folder and unzip it inside your composer repo to install.
+
 This folder contains a Bot Project created with Bot Framework Composer.
 
 The full documentation for Composer lives here:
